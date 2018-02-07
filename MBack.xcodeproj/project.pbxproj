@@ -15,7 +15,35 @@
 		BFA1CEBB202B18C4006668B0 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA1CEBA202B18C4006668B0 /* Extension.swift */; };
 		BFA1CEBD202B1A81006668B0 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA1CEBC202B1A81006668B0 /* ViewController2.swift */; };
 		BFA1CEBF202B1A8D006668B0 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA1CEBE202B1A8D006668B0 /* ViewController3.swift */; };
+		BFA1CEDB202B2A66006668B0 /* MBackFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = BFA1CED9202B2A66006668B0 /* MBackFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA1CEDE202B2A66006668B0 /* MBack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA1CED7202B2A66006668B0 /* MBack.framework */; };
+		BFA1CEDF202B2A66006668B0 /* MBack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BFA1CED7202B2A66006668B0 /* MBack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BFA1CEE3202B2A8B006668B0 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA1CEBA202B18C4006668B0 /* Extension.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFA1CEDC202B2A66006668B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFA1CE9D202B1852006668B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFA1CED6202B2A66006668B0;
+			remoteInfo = MBackFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BFA1CED1202B2A1B006668B0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BFA1CEDF202B2A66006668B0 /* MBack.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BFA1CEA5202B1852006668B0 /* MBack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBack.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,10 +56,23 @@
 		BFA1CEBA202B18C4006668B0 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		BFA1CEBC202B1A81006668B0 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		BFA1CEBE202B1A8D006668B0 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		BFA1CEC7202B2A1B006668B0 /* MBackButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBackButton.h; sourceTree = "<group>"; };
+		BFA1CEC8202B2A1B006668B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFA1CED7202B2A66006668B0 /* MBack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFA1CED9202B2A66006668B0 /* MBackFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBackFramework.h; sourceTree = "<group>"; };
+		BFA1CEDA202B2A66006668B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BFA1CEA2202B1852006668B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA1CEDE202B2A66006668B0 /* MBack.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFA1CED3202B2A66006668B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				BFA1CEA7202B1852006668B0 /* MBack */,
+				BFA1CEC6202B2A1B006668B0 /* MBackButton */,
+				BFA1CED8202B2A66006668B0 /* MBackFramework */,
 				BFA1CEA6202B1852006668B0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				BFA1CEA5202B1852006668B0 /* MBack.app */,
+				BFA1CED7202B2A66006668B0 /* MBack.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,7 +117,36 @@
 			path = MBack;
 			sourceTree = "<group>";
 		};
+		BFA1CEC6202B2A1B006668B0 /* MBackButton */ = {
+			isa = PBXGroup;
+			children = (
+				BFA1CEC7202B2A1B006668B0 /* MBackButton.h */,
+				BFA1CEC8202B2A1B006668B0 /* Info.plist */,
+			);
+			path = MBackButton;
+			sourceTree = "<group>";
+		};
+		BFA1CED8202B2A66006668B0 /* MBackFramework */ = {
+			isa = PBXGroup;
+			children = (
+				BFA1CED9202B2A66006668B0 /* MBackFramework.h */,
+				BFA1CEDA202B2A66006668B0 /* Info.plist */,
+			);
+			path = MBackFramework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BFA1CED4202B2A66006668B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA1CEDB202B2A66006668B0 /* MBackFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		BFA1CEA4202B1852006668B0 /* MBack */ = {
@@ -83,15 +156,35 @@
 				BFA1CEA1202B1852006668B0 /* Sources */,
 				BFA1CEA2202B1852006668B0 /* Frameworks */,
 				BFA1CEA3202B1852006668B0 /* Resources */,
+				BFA1CED1202B2A1B006668B0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BFA1CEDD202B2A66006668B0 /* PBXTargetDependency */,
 			);
 			name = MBack;
 			productName = MBack;
 			productReference = BFA1CEA5202B1852006668B0 /* MBack.app */;
 			productType = "com.apple.product-type.application";
+		};
+		BFA1CED6202B2A66006668B0 /* MBackFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFA1CEE0202B2A66006668B0 /* Build configuration list for PBXNativeTarget "MBackFramework" */;
+			buildPhases = (
+				BFA1CED2202B2A66006668B0 /* Sources */,
+				BFA1CED3202B2A66006668B0 /* Frameworks */,
+				BFA1CED4202B2A66006668B0 /* Headers */,
+				BFA1CED5202B2A66006668B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MBackFramework;
+			productName = MBackFramework;
+			productReference = BFA1CED7202B2A66006668B0 /* MBack.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -104,6 +197,10 @@
 				ORGANIZATIONNAME = MZC;
 				TargetAttributes = {
 					BFA1CEA4202B1852006668B0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					BFA1CED6202B2A66006668B0 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -123,6 +220,7 @@
 			projectRoot = "";
 			targets = (
 				BFA1CEA4202B1852006668B0 /* MBack */,
+				BFA1CED6202B2A66006668B0 /* MBackFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -135,6 +233,13 @@
 				BFA1CEB3202B1852006668B0 /* LaunchScreen.storyboard in Resources */,
 				BFA1CEB0202B1852006668B0 /* Assets.xcassets in Resources */,
 				BFA1CEAE202B1852006668B0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFA1CED5202B2A66006668B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,7 +258,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BFA1CED2202B2A66006668B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA1CEE3202B2A8B006668B0 /* Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFA1CEDD202B2A66006668B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFA1CED6202B2A66006668B0 /* MBackFramework */;
+			targetProxy = BFA1CEDC202B2A66006668B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BFA1CEAC202B1852006668B0 /* Main.storyboard */ = {
@@ -285,6 +406,7 @@
 		BFA1CEB8202B1852006668B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A9A3TBM5N5;
@@ -301,6 +423,7 @@
 		BFA1CEB9202B1852006668B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A9A3TBM5N5;
@@ -311,6 +434,54 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BFA1CEE1202B2A66006668B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = A9A3TBM5N5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MBackFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MBack.snsd.MBackFramework;
+				PRODUCT_NAME = MBack;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BFA1CEE2202B2A66006668B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = A9A3TBM5N5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MBackFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MBack.snsd.MBackFramework;
+				PRODUCT_NAME = MBack;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -331,6 +502,15 @@
 			buildConfigurations = (
 				BFA1CEB8202B1852006668B0 /* Debug */,
 				BFA1CEB9202B1852006668B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFA1CEE0202B2A66006668B0 /* Build configuration list for PBXNativeTarget "MBackFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFA1CEE1202B2A66006668B0 /* Debug */,
+				BFA1CEE2202B2A66006668B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
