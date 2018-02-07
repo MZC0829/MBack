@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "MBack"
-s.version      = "1.0.0"
+s.version      = "1.0.1"
 s.summary      = "Custom backBarButtonItem"
 s.description  = "Custom backBarButtonItem in Swift."
 s.homepage     = "https://github.com/MZC0829/MBack"

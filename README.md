@@ -15,7 +15,7 @@ target 'YourIosApps' do
 
   use_frameworks!
 
-  pod 'MBack', '~> 1.0.0'
+  pod 'MBack'
 
 end
 ```
