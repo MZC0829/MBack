@@ -81,21 +81,21 @@ override func viewWillAppear(_ animated: Bool)
 ```
 
 ## PS
-###自定义返回按钮后，屏幕左边缘滑动返回会失效，解决办法如下：
->1、让 ViewController 继承 UIGestureRecognizerDelegate
->
->2、
->
->```
->override func viewDidLoad()
+
+### 自定义返回按钮后，屏幕左边缘滑动返回会失效，解决办法如下：
+##### 1、让 ViewController 继承 UIGestureRecognizerDelegate
+
+##### 2、
+
+```
+override func viewDidLoad()
 {
     super.viewDidLoad()
     self.navigationController?.interactivePopGestureRecognizer?.delegate = self        
 }
->```
->3、
->
->```
+```
+##### 3、
+```
 func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool
 {
         if gestureRecognizer == self.navigationController?.interactivePopGestureRecognizer
@@ -104,4 +104,4 @@ func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive t
         }
         return true      
 }
->
+
